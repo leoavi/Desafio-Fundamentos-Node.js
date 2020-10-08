@@ -71,6 +71,8 @@ describe('Transaction', () => {
       value: 3000,
     });
 
+    console.log('status', response.status);
+
     expect(response.status).toBe(400);
     expect(response.body).toMatchObject(
       expect.objectContaining({
